@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<SimscapeMultibodyImportXML version="2.0" xmlns="urn:mathworks:SimscapeMultibody:import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Created by="" on="11/24/25||13:03:03" using="Simscape Multibody Link Version 4.8" from="SolidWorks 33.1.2"/>
+<ModelUnits mass="kilogram" length="millimeter"/>
+<DataUnits mass="kilogram" length="meter"/>
+<RootAssembly name="Assembly DC FAn" uid="Assembly DC FAn" version="120">
+<AssemblyFile name="Assembly DC FAn.SLDASM" type="SolidWorks Assembly"/>
+<InstanceTree>
+<Instance name="housing-3" uid="housing-3" grounded="true" entityUid="housing*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>1.3270870061695876 0.65785424333766607 0.89313972952194853</Translation>
+</Transform>
+</Instance>
+<Instance name="Propeler-2" uid="Propeler-2" entityUid="Propeler*:*Default">
+<Transform>
+<Rotation>-0.90479388874082411 0.42584976094540372 1.832730403287645e-016 0 -3.8486242795017079e-016 1 0.42584976094540372 0.90479388874082411 3.3910004406132314e-016</Rotation>
+<Translation>1.327087006169587 0.65385424333766606 0.89313972952195742</Translation>
+</Transform>
+</Instance>
+</InstanceTree>
+<Constraints>
+<Concentric name="Concentric1">
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>housing-3</Uid>
+</InstancePath>
+<Position>0 0.012499999999999956 0</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Propeler-2</Uid>
+</InstancePath>
+<Position>0 0 -0.0074999999999999512</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident1">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>housing-3</Uid>
+</InstancePath>
+<Position>0 -0.012499999999999956 0.04271446609406726</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Propeler-2</Uid>
+</InstancePath>
+<Position>0 0 -0.008499999999999952</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+</Coincident>
+</Constraints>
+</RootAssembly>
+<Assemblies>
+</Assemblies>
+<Parts>
+<Part name="Propeler" uid="Propeler*:*Default" version="488">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Propeler.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.0062123224756371921</Mass>
+<CenterOfMass>4.8176747618179791e-010 1.4710937452270615e-007 -0.00056578662907631088</CenterOfMass>
+<Inertia>1.6041181407384247e-006 1.6041393492255601e-006 2.9433085118080371e-006 -5.5018506409612407e-012 -2.6935088190845815e-012 2.2022046246523356e-011</Inertia>
+</MassProperties>
+<GeometryFile name="Propeler_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.69411764705882351" g="0.098039215686274508" b="0.098039215686274508" a="1"/>
+<Diffuse r="0.69411764705882351" g="0.098039215686274508" b="0.098039215686274508" a="1"/>
+<Specular r="0.34705882352941175" g="0.049019607843137254" b="0.049019607843137254" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="housing" uid="housing*:*Default" version="240">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="housing.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.025243465190626001</Mass>
+<CenterOfMass>-1.837057166613677e-005 0.0016312254607259405 6.7230640951223254e-005</CenterOfMass>
+<Inertia>2.039980299375698e-005 3.7688836374025812e-005 2.0560303440442864e-005 -1.5458368937589379e-008 2.8768283628476177e-008 4.2838809440692447e-009</Inertia>
+</MassProperties>
+<GeometryFile name="housing_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="1" g="1" b="1" a="1"/>
+<Diffuse r="1" g="1" b="1" a="1"/>
+<Specular r="0.5" g="0.5" b="0.5" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+</Parts>
+</SimscapeMultibodyImportXML>
